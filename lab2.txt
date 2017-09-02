@@ -1,0 +1,31 @@
+Group Name: Team BrianNJacob
+Group Members: Brian Caravantes and Jacob Sphatt
+
+Data 
+-Each item of data should have a unique identifying number
+-Each item of data should be updatable (changeable automatically or )
+-Data should have the correct format depending on w
+
+
+User Interaction:
+-Being able to view description of item
+-Being able to delete an item/order from a list of items 
+-Being able to add sub contents to items
+-Being able to Edit or change a price of an item
+-Being able to exit a reciept process(cancel)
+-Being able to apply a certain percentatage to a final price or item price(discount)
+-User should be able to find/look up certain price of item
+-Should be able to "checkout":
+	*where all item prices add up 
+	*where it list all items 
+	*where it would show discounts
+
+-Depending whether the user interaction is self service vs cashier service, this will affect user interactions that each would have access to, since we obviously don't want a customer editing prices or adding there own discounts.
+
+
+
+
+
+
+
+
