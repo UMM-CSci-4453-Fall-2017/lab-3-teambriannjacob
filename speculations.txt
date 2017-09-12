@@ -1,0 +1,45 @@
+Brian Caravantes
+Jacob Sphatt
+
+-How will inventory be tracked?
+The inventory will be tracked with multiple tables with each table having a reference/relationship to other tables.
+-Should the system keep track of vendors?
+Yes it will make it harder to maintain the data but will be beneficial in the long run because we will be able to compare vendor prices.
+-What about the people working the tills (cash registers)?
+--Should the system track when they log into a till?
+Yes, they should  be able to login into the til for administrative, security and management purposes. This is an example of checking of 
+how much is actually in the till vs what was accounted for
+--Should the system track how long an interaction takes place (efficiency?).
+Yes because then we will be able to tell whether the connections/relationships we have between tables in our database is correct and
+efficient. 
+--Should the system try to help with up-selling? (suggesting other merchandise... would you like a drink with that?)
+Yes because the customer might want different options so if I a customer chooses to buy a burger then a variety of combos containing
+that certain burger could persuade them to change their mind.
+-How should it deal with
+-items sold by unit: The till should be able to recall a certain item and enter it into a different table with the certain quantity 
+entered.
+-items sold by volume: The till should be able to recall a certain item that is sold by volume with the price per volume listed and is 
+then multiplied by the actual checkout volume of that item.
+-items part of a combination deal: Items sold apart of a combination deals would recognize an item apart of a combination deal/s then 
+would list the combos for that item else they could also just buy. 
+-sale items: Items that are apart of a sale would have a separate table for sales that the item/s would correspond to depending what kind
+of sale they are apart of. 
+-promotional items: Items that are part of a promotional deal would have a table like the sale items but would have a limited time 
+interval which would end when the promotional deal ends.
+-Coupons: It would apply certain percentage that an individual item price or overall final checkout price then it would subtract it 
+automatically. 
+-Refunds: The database should recall the certain item that is trying to be refunded from the item inventory table listing the price and 
+quantity that the store contains. Then the price would be refunded and the quantity  incremented. 
+-mistakes: You should be able to cancel an item if it's on the till list and give you a final warning before checking out making sure you
+double check the list you are about to purchase.
+-How independent should the individual tills be?
+--Can the tills operate if the local network is down?
+It should be able to operate, maybe by creating a temporary database which is stored on the til and then updated when the network is 
+updated.
+--What is stored on the server? And What is stored on the till?
+The server stores most if not all the data tables with containing all the metadata. It would not store the current items being checked 
+out, prices, quantity,etc. Then at the end of the checkout it would send all the data from the till to the server
+
+
+
+
